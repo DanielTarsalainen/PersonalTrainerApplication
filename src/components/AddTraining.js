@@ -16,6 +16,8 @@ function AddTraining(props) {
     activity: '',
     customer: props.link,
   });
+  
+  // Transfered rowData was received with "customer: props.link". Aforementioned act linked training to a particular customer.
 
   const handleSave = () => {
     training.date = new Date(training.date).toISOString();
