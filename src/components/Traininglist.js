@@ -69,6 +69,8 @@ function Traininglist() {
       .catch(err => console.log(err))
   }
 
+  // transfered the whole object in selectedRow, so I could parse the training id out of it and delete.
+  
   const deleteTraining = (selectedRow) => {
     console.log(selectedRow.id)
     fetch('https://customerrest.herokuapp.com/api/trainings/' + selectedRow.id,
@@ -86,6 +88,8 @@ function Traininglist() {
       .catch(err => console.error(err))
   }
 
+  // used Moment to format date to a nice-looking format.
+  
   const columns = [
     {
       title: "Date",
@@ -132,6 +136,7 @@ function Traininglist() {
           })
         }}
         editable={{
+          // Sent the object data I want to delete in deleteTraining(oldData)
           onRowDelete: oldData =>
             new Promise((resolve, reject) => {
               setTimeout(() => {
@@ -142,7 +147,7 @@ function Traininglist() {
             })
         }}
       />
-
+        // Used Snackbar to clarify succeeding delete operations, the same was implemented in Customer. 
       <Snackbar
         open={open}
         message={msg}
