@@ -22,6 +22,11 @@ function TrainCalendar() {
       .then(data => setTrainings(data))
       .catch(err => console.log(err))
   }
+  
+  // Used BigCalendar to generate cool looking calendar. 
+  // Below I had to map through trainings and name them according to the BigCalendar rules.
+  // Startdate had to be an Date object, so I had to create new Date Object
+  // End-date was derived from the Startdate object.
 
   const events = trainings.map((training) => {
     return {
