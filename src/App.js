@@ -12,6 +12,8 @@ import TrainCalendar from './components/TrainCalendar';
 
 function App() {
 
+  // used react router to generate navigation system
+  
   const routes = ["/home", "/components/customerlist", "/components/traininglist", "/components/traincalendar"];
 
 
