@@ -31,6 +31,7 @@ function Customerlist() {
   const [msg, setMsg] = useState('');
 
 
+  // I had to bring material icons manually, since they didn't come automatically.
 
   const tableIcons = {
     Add: forwardRef((props, ref) => <AddBox {...props} ref={ref} />),
@@ -152,6 +153,8 @@ function Customerlist() {
       .catch(err => console.error(err))
   }
 
+  // I used render => rowData to transfer data from Customerlist to AddTraining
+  
   const columns = [
     {
       title: "Add training",
@@ -192,6 +195,8 @@ function Customerlist() {
 
   return (
 
+    // Used MaterialTables Editable component to generate CRUDS(Create, Update, Delete) for Customer.
+    
     <div style={{
       marginTop: "11vh"
     }}>
