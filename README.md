@@ -7,7 +7,7 @@
 </br>
 
 #### Description:
-[Front End programming ](https://opinto-opas.haaga-helia.fi/course_unit/SWD4TN026) -end project. The app allows a hypothetical personal trainer to add, edit and delete own customers, add trainings to a certain customer or delete them. It also has a functionality to view appointments in three different calendar views.
+[Front End programming](https://opinto-opas.haaga-helia.fi/course_unit/SWD4TF022) -end project. The app allows a hypothetical personal trainer to add, edit and delete own customers, add trainings to a certain customer or delete them. It also has a functionality to view appointments in three different calendar views.
 
 </br>
 
