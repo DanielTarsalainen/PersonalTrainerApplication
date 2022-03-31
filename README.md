@@ -6,10 +6,13 @@
 
 #### [Live-installation](https://personaltrainer-application.herokuapp.com/home) (It takes about 40 seconds to reload)
 
+#### Description:
+Front-end programming -end project. The app allows a hypothetical personal trainer to add, edit and delete own customers, add trainings to a certain customer or delete them. It also has a functionality to view appointments in three different calendar views.
+
 </br>
 
-## Technologies: 
-React, Material-UI, Material-Table
+## Main technologies: 
+React, Material-UI, Material-Table.
 
 </br>
 
